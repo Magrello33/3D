@@ -12,10 +12,6 @@ content="Aprenda Impressão 3D do zero. Modelagem, preparação, calibração e 
 
 <style>
 
-/* =========================================================
-RESET
-========================================================= */
-
 *{
     margin:0;
     padding:0;
@@ -29,7 +25,7 @@ html{
 body{
     font-family:Arial, Helvetica, sans-serif;
     color:#172033;
-    background:#ffffff;
+    background:#fff;
     line-height:1.6;
     overflow-x:hidden;
 }
@@ -51,61 +47,38 @@ select{
     font:inherit;
 }
 
-
-/* =========================================================
-CORES
-========================================================= */
-
 :root{
     --blue:#1769e0;
     --blue-dark:#0d4fae;
-    --blue-light:#eaf3ff;
-
     --text:#172033;
     --muted:#667085;
-
-    --white:#ffffff;
+    --white:#fff;
     --light:#f6f8fb;
-    --light-blue:#f1f7ff;
-
     --border:#e3e8ef;
-
     --green:#25d366;
 }
 
-
-/* =========================================================
-CONTAINER
-========================================================= */
-
 .container{
-    width:min(1180px, calc(100% - 40px));
+    width:min(1180px,calc(100% - 40px));
     margin:auto;
 }
 
-
-/* =========================================================
-HEADER
-========================================================= */
+/* HEADER */
 
 header{
     position:sticky;
     top:0;
     z-index:1000;
-
-    background:rgba(255,255,255,.96);
+    background:rgba(255,255,255,.97);
     backdrop-filter:blur(12px);
-
     border-bottom:1px solid var(--border);
 }
 
 .header{
     min-height:78px;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
-
     gap:25px;
 }
 
@@ -154,14 +127,10 @@ header{
 .header-button{
     background:var(--blue);
     color:#fff;
-
     padding:11px 18px;
-
     border-radius:8px;
-
     font-size:12px;
     font-weight:700;
-
     transition:.2s;
 }
 
@@ -170,51 +139,36 @@ header{
     transform:translateY(-1px);
 }
 
-
-/* =========================================================
-HERO
-========================================================= */
+/* HERO */
 
 .hero{
     position:relative;
     min-height:650px;
-
     display:flex;
     align-items:center;
-
     overflow:hidden;
-
     background:#edf5ff;
 }
 
 .hero::before{
     content:"";
-
     position:absolute;
-
     width:650px;
     height:650px;
-
     right:-250px;
     top:-180px;
-
     border-radius:50%;
-
     background:rgba(23,105,224,.08);
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-
-    width:min(1180px, calc(100% - 40px));
+    width:min(1180px,calc(100% - 40px));
     margin:auto;
-
     display:grid;
     grid-template-columns:1fr 1fr;
-
     align-items:center;
-
     gap:60px;
 }
 
@@ -222,23 +176,15 @@ HERO
     display:inline-flex;
     align-items:center;
     gap:8px;
-
     padding:8px 13px;
-
     background:#fff;
-
     border:1px solid #d9e8fb;
-
     border-radius:30px;
-
     color:var(--blue);
-
     font-size:11px;
     font-weight:800;
-
     text-transform:uppercase;
     letter-spacing:1px;
-
     margin-bottom:22px;
 }
 
@@ -246,23 +192,16 @@ HERO
     content:"";
     width:7px;
     height:7px;
-
     background:var(--blue);
-
     border-radius:50%;
 }
 
 .hero h1{
     max-width:620px;
-
-    font-size:clamp(44px, 5.5vw, 72px);
-
+    font-size:clamp(44px,5.5vw,72px);
     line-height:1.02;
-
     letter-spacing:-3px;
-
     color:var(--text);
-
     margin-bottom:22px;
 }
 
@@ -272,13 +211,9 @@ HERO
 
 .hero-text{
     max-width:520px;
-
     color:var(--muted);
-
     font-size:16px;
-
     line-height:1.75;
-
     margin-bottom:30px;
 }
 
@@ -290,18 +225,13 @@ HERO
 
 .btn{
     min-height:50px;
-
     padding:0 23px;
-
     display:inline-flex;
     align-items:center;
     justify-content:center;
-
     border-radius:8px;
-
     font-size:12px;
     font-weight:800;
-
     transition:.2s;
 }
 
@@ -327,53 +257,38 @@ HERO
     color:var(--blue);
 }
 
-
-/* BANNER */
-
 .hero-image{
     position:relative;
-
     min-height:470px;
-
     border-radius:18px;
-
     overflow:hidden;
-
     box-shadow:0 25px 60px rgba(31,60,100,.15);
-
     background:#dcecff;
 }
 
 .hero-image::after{
     content:"";
-
     position:absolute;
     inset:0;
-
     background:linear-gradient(
         135deg,
         rgba(23,105,224,.08),
         rgba(255,255,255,.02)
     );
+    pointer-events:none;
 }
 
 .hero-image img{
     width:100%;
     height:100%;
-
     min-height:470px;
-
     object-fit:cover;
 }
 
-
-/* =========================================================
-DADOS
-========================================================= */
+/* STATS */
 
 .stats{
     background:#fff;
-
     border-bottom:1px solid var(--border);
 }
 
@@ -384,7 +299,6 @@ DADOS
 
 .stat{
     padding:30px 22px;
-
     border-right:1px solid var(--border);
 }
 
@@ -394,74 +308,51 @@ DADOS
 
 .stat strong{
     display:block;
-
     color:var(--blue);
-
     font-size:29px;
-
     line-height:1;
 }
 
 .stat span{
     display:block;
-
     margin-top:7px;
-
     color:#697586;
-
     font-size:11px;
-
     text-transform:uppercase;
-
     letter-spacing:.8px;
 }
 
-
-/* =========================================================
-INTRO
-========================================================= */
+/* INTRO */
 
 .intro{
     padding:110px 0;
-
     background:#fff;
 }
 
 .intro-grid{
     display:grid;
-
     grid-template-columns:.7fr 1.3fr;
-
     gap:80px;
 }
 
 .tag{
     color:var(--blue);
-
     font-size:11px;
-
     font-weight:800;
-
     text-transform:uppercase;
-
     letter-spacing:1.5px;
 }
 
 .intro-title{
     font-size:17px;
-
     margin-top:12px;
-
     color:var(--text);
 }
 
 .intro-text{
     font-size:clamp(28px,4vw,48px);
-
     line-height:1.13;
-
     letter-spacing:-1.8px;
-
     color:var(--text);
 }
 
@@ -469,10 +360,7 @@ INTRO
     color:#8994a5;
 }
 
-
-/* =========================================================
-FORMAÇÃO
-========================================================= */
+/* SEÇÕES */
 
 .section{
     padding:105px 0;
@@ -486,206 +374,145 @@ FORMAÇÃO
     display:flex;
     justify-content:space-between;
     align-items:flex-end;
-
     gap:30px;
-
     margin-bottom:55px;
 }
 
 .section-header h2{
     font-size:clamp(35px,4vw,52px);
-
     line-height:1;
-
     letter-spacing:-2px;
-
     color:var(--text);
-
     margin-top:10px;
 }
 
 .section-header p{
     max-width:390px;
-
     color:var(--muted);
-
     font-size:14px;
 }
 
+/* FORMAÇÃO */
+
 .course-grid{
     display:grid;
-
     grid-template-columns:repeat(3,1fr);
-
     gap:18px;
 }
 
 .course-card{
     background:#fff;
-
     border:1px solid var(--border);
-
     border-radius:12px;
-
     padding:30px;
-
     min-height:245px;
-
     transition:.25s;
 }
 
 .course-card:hover{
     transform:translateY(-5px);
-
     border-color:#b9d4f8;
-
     box-shadow:0 15px 35px rgba(23,50,90,.08);
 }
 
 .course-number{
     color:var(--blue);
-
     font-size:12px;
-
     font-weight:800;
 }
 
 .course-card h3{
     font-size:22px;
-
     margin:35px 0 10px;
-
     color:var(--text);
 }
 
 .course-card p{
     color:var(--muted);
-
     font-size:13px;
-
     line-height:1.7;
 }
 
-
-/* =========================================================
-TECNOLOGIA
-========================================================= */
-
-.technology{
-    background:#fff;
-}
+/* TECNOLOGIA */
 
 .tech-grid{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:70px;
-
     align-items:center;
 }
 
 .tech-image{
     height:480px;
-
     overflow:hidden;
-
     border-radius:16px;
-
     background:#edf3fa;
 }
 
 .tech-image img{
     width:100%;
     height:100%;
-
     object-fit:cover;
 }
 
 .tech-content h2{
     font-size:clamp(36px,4vw,52px);
-
     line-height:1.03;
-
     letter-spacing:-2px;
-
     margin:12px 0 20px;
 }
 
 .tech-content p{
     color:var(--muted);
-
     font-size:14px;
-
     line-height:1.8;
-
     max-width:500px;
 }
 
 .tools{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:10px;
-
     margin-top:30px;
 }
 
 .tool{
     padding:17px;
-
     border:1px solid var(--border);
-
     border-radius:9px;
-
     background:var(--light);
 }
 
 .tool strong{
     display:block;
-
     color:var(--text);
-
     font-size:14px;
 }
 
 .tool span{
     display:block;
-
     color:#7b8797;
-
     font-size:11px;
-
     margin-top:3px;
 }
 
-
-/* =========================================================
-GALERIA
-========================================================= */
+/* GALERIA */
 
 .gallery{
     background:var(--light);
-
     padding:105px 0;
 }
 
 .gallery-grid{
     display:grid;
-
     grid-template-columns:1.4fr .8fr .8fr;
-
     grid-template-rows:240px 240px;
-
     gap:12px;
 }
 
 .gallery-card{
     overflow:hidden;
-
     border-radius:10px;
-
     background:#e5eaf0;
 }
 
@@ -696,9 +523,7 @@ GALERIA
 .gallery-card img{
     width:100%;
     height:100%;
-
     object-fit:cover;
-
     transition:.4s;
 }
 
@@ -706,73 +531,49 @@ GALERIA
     transform:scale(1.04);
 }
 
-
-/* =========================================================
-MODALIDADES
-========================================================= */
-
-.modes{
-    background:#fff;
-}
+/* MODALIDADES */
 
 .mode-grid{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:18px;
 }
 
 .mode{
     border:1px solid var(--border);
-
     border-radius:14px;
-
     padding:40px;
-
     background:#fff;
-
     transition:.2s;
 }
 
 .mode:hover{
     border-color:#b9d4f8;
-
     box-shadow:0 15px 35px rgba(20,60,110,.07);
 }
 
 .mode-label{
     color:var(--blue);
-
     font-size:10px;
-
     font-weight:800;
-
     letter-spacing:1.5px;
 }
 
 .mode h3{
     font-size:30px;
-
     margin:35px 0 10px;
 }
 
 .mode p{
     color:var(--muted);
-
     font-size:14px;
-
     max-width:450px;
 }
 
-
-/* =========================================================
-CTA
-========================================================= */
+/* CTA */
 
 .cta{
     padding:100px 0;
-
     background:
         linear-gradient(
             120deg,
@@ -792,70 +593,43 @@ CTA
 
 .cta h2{
     color:#fff;
-
     font-size:clamp(40px,5vw,65px);
-
     line-height:1;
-
     letter-spacing:-2.5px;
-
     margin:14px 0 20px;
 }
 
 .cta p{
     color:#dceaff;
-
     max-width:570px;
-
     font-size:15px;
-
     margin-bottom:28px;
 }
 
 .cta .btn-primary{
     background:#fff;
-
     color:var(--blue);
-
     box-shadow:none;
 }
 
-.cta .btn-primary:hover{
-    background:#eef6ff;
-}
-
-
-/* =========================================================
-FAQ
-========================================================= */
-
-.faq{
-    background:#fff;
-}
+/* FAQ */
 
 .faq-grid{
     display:grid;
-
     grid-template-columns:.7fr 1.3fr;
-
     gap:80px;
 }
 
 .faq-title h2{
     font-size:48px;
-
     line-height:1;
-
     letter-spacing:-2px;
-
     margin-top:12px;
 }
 
 .faq-title p{
     color:var(--muted);
-
     font-size:13px;
-
     margin-top:15px;
 }
 
@@ -869,53 +643,35 @@ FAQ
 
 .faq-question{
     width:100%;
-
     border:0;
-
     background:none;
-
     padding:22px 0;
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
     gap:20px;
-
     text-align:left;
-
     color:var(--text);
-
     cursor:pointer;
-
     font-size:14px;
-
     font-weight:700;
 }
 
 .faq-icon{
     color:var(--blue);
-
     font-size:22px;
-
     transition:.25s;
 }
 
 .faq-answer{
     max-height:0;
-
     overflow:hidden;
-
     transition:.3s ease;
 }
 
 .faq-answer p{
     color:var(--muted);
-
     font-size:13px;
-
     padding-bottom:22px;
 }
 
@@ -927,40 +683,29 @@ FAQ
     transform:rotate(45deg);
 }
 
-
-/* =========================================================
-CONTATO
-========================================================= */
+/* CONTATO */
 
 .contact{
     background:var(--light);
-
     padding:105px 0;
 }
 
 .contact-grid{
     display:grid;
-
     grid-template-columns:.85fr 1.15fr;
-
     gap:65px;
 }
 
 .contact-info h2{
     font-size:48px;
-
     line-height:1;
-
     letter-spacing:-2px;
-
     margin:12px 0 18px;
 }
 
 .contact-info > p{
     color:var(--muted);
-
     max-width:450px;
-
     font-size:14px;
 }
 
@@ -970,52 +715,37 @@ CONTATO
 
 .detail{
     padding:15px 0;
-
     border-top:1px solid var(--border);
 }
 
 .detail strong{
     display:block;
-
     color:var(--text);
-
     font-size:11px;
-
     text-transform:uppercase;
-
     letter-spacing:.6px;
 }
 
 .detail span{
     display:block;
-
     color:var(--muted);
-
     font-size:13px;
-
     margin-top:3px;
 }
 
-
-/* FORM */
+/* FORMULÁRIO */
 
 .form{
     background:#fff;
-
     padding:32px;
-
     border-radius:14px;
-
     border:1px solid var(--border);
-
     box-shadow:0 12px 35px rgba(20,50,90,.05);
 }
 
 .form-row{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:12px;
 }
 
@@ -1025,13 +755,9 @@ CONTATO
 
 .field label{
     display:block;
-
     color:var(--text);
-
     font-size:10px;
-
     font-weight:800;
-
     margin-bottom:6px;
 }
 
@@ -1039,25 +765,17 @@ CONTATO
 .field select,
 .field textarea{
     width:100%;
-
     border:1px solid #d7dee8;
-
     border-radius:7px;
-
     background:#fff;
-
     padding:13px;
-
     outline:none;
-
     color:var(--text);
-
     font-size:13px;
 }
 
 .field textarea{
     min-height:115px;
-
     resize:vertical;
 }
 
@@ -1065,98 +783,58 @@ CONTATO
 .field select:focus,
 .field textarea:focus{
     border-color:var(--blue);
-
     box-shadow:0 0 0 3px rgba(23,105,224,.08);
 }
 
 .terms{
     display:flex;
-
     align-items:flex-start;
+    gap:9px;
+    color:#667085;
+    font-size:12px;
+    line-height:1.5;
+    margin:16px 0 20px;
+}
 
-    gap:8px;
+.terms input{
+    flex:0 0 auto;
+    width:16px;
+    height:16px;
+    margin-top:2px;
+    cursor:pointer;
+}
 
-    color:#7a8493;
-
-    font-size:10px;
-
-    margin:12px 0 16px;
+.terms label{
+    cursor:pointer;
 }
 
 .terms a{
     color:var(--blue);
+    font-weight:600;
 }
 
 .form-button{
     width:100%;
-
     border:0;
-
     background:var(--blue);
-
     color:#fff;
-
     padding:15px;
-
     border-radius:8px;
-
     cursor:pointer;
-
-    font-size:12px;
-
+    font-size:13px;
     font-weight:800;
-
     transition:.2s;
 }
 
 .form-button:hover{
     background:var(--blue-dark);
-}
-    
-/* Container da caixa de seleção dos termos */
-.terms {
-  display: flex;
-  align-items: center; /* Alinha o checkbox verticalmente com a primeira linha do texto */
-  gap: 8px; /* Cria um espaço uniforme entre o checkbox e o texto */
-  margin: 16px 0; /* Espaçamento em cima e embaixo */
-  font-size: 14px;
+    transform:translateY(-1px);
 }
 
-/* Ajuste opcional no checkbox */
-.terms input[type="checkbox"] {
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-}
-
-/* Estilização do texto dos termos */
-.terms label {
-  color: #666;
-  line-height: 1.4;
-}
-
-/* Estilização do botão de envio */
-.form-button {
-  width: 100%;
-  padding: 14px;
-  background-color: #0d6efd; /* Ajuste para a cor azul da sua marca */
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  margin-bottom: 80px; /* IMPORTANTE: evita que o botão do WhatsApp cubra este botão no mobile */
-}
-
-
-/* =========================================================
-LOCALIZAÇÃO / MAPA
-========================================================= */
+/* MAPA */
 
 .location{
     background:#fff;
-
     padding:85px 0;
 }
 
@@ -1166,98 +844,69 @@ LOCALIZAÇÃO / MAPA
 
 .location-header h2{
     font-size:42px;
-
     letter-spacing:-1.5px;
-
     margin-top:10px;
 }
 
 .location-header p{
     color:var(--muted);
-
     font-size:14px;
-
     margin-top:7px;
 }
 
 .map{
     width:100%;
-
     height:300px;
-
     border-radius:14px;
-
     overflow:hidden;
-
     border:1px solid var(--border);
-
     box-shadow:0 10px 30px rgba(20,50,90,.08);
 }
 
 .map iframe{
     width:100%;
-
     height:100%;
-
     border:0;
 }
 
-
-/* =========================================================
-FOOTER
-========================================================= */
+/* FOOTER */
 
 footer{
     background:#101827;
-
     color:#fff;
-
     padding:60px 0 25px;
 }
 
 .footer-grid{
     display:grid;
-
     grid-template-columns:1.3fr 1fr 1fr 1fr;
-
     gap:45px;
 }
 
 .footer-logo{
     font-size:19px;
-
     font-weight:800;
-
     margin-bottom:10px;
 }
 
 .footer-column p{
     color:#aab4c3;
-
     font-size:12px;
-
     line-height:1.7;
 }
 
 .footer-column h4{
     color:#fff;
-
     font-size:11px;
-
     text-transform:uppercase;
-
     letter-spacing:1px;
-
     margin-bottom:16px;
 }
 
 .footer-column a{
     display:block;
-
     color:#aab4c3;
-
     font-size:12px;
-
     margin-bottom:9px;
 }
 
@@ -1267,71 +916,45 @@ footer{
 
 .footer-info{
     color:#aab4c3;
-
     font-size:12px;
-
     line-height:1.8;
 }
 
 .footer-bottom{
     border-top:1px solid rgba(255,255,255,.1);
-
     margin-top:45px;
-
     padding-top:20px;
-
     display:flex;
-
     justify-content:space-between;
-
     gap:20px;
-
     color:#778397;
-
     font-size:10px;
 }
 
-
-/* =========================================================
-WHATSAPP
-========================================================= */
+/* WHATSAPP */
 
 .whatsapp{
     position:fixed;
-
     right:22px;
-
     bottom:22px;
-
     width:58px;
-
     height:58px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     background:var(--green);
-
     color:#fff;
-
     border-radius:17px;
-
     z-index:999;
-
     box-shadow:
         0 8px 25px rgba(0,0,0,.18),
         0 0 0 5px rgba(37,211,102,.10);
-
     transition:.2s;
 }
 
 .whatsapp svg{
     width:27px;
     height:27px;
-
     fill:#fff;
 }
 
@@ -1339,10 +962,7 @@ WHATSAPP
     transform:translateY(-4px) scale(1.04);
 }
 
-
-/* =========================================================
-TABLET
-========================================================= */
+/* TABLET */
 
 @media(max-width:950px){
 
@@ -1352,9 +972,7 @@ TABLET
 
     .hero-content{
         grid-template-columns:1fr;
-
         gap:40px;
-
         padding:70px 0;
     }
 
@@ -1380,7 +998,6 @@ TABLET
 
     .intro-grid{
         grid-template-columns:1fr;
-
         gap:30px;
     }
 
@@ -1390,7 +1007,6 @@ TABLET
 
     .tech-grid{
         grid-template-columns:1fr;
-
         gap:40px;
     }
 
@@ -1400,7 +1016,6 @@ TABLET
 
     .faq-grid{
         grid-template-columns:1fr;
-
         gap:45px;
     }
 
@@ -1411,13 +1026,9 @@ TABLET
     .footer-grid{
         grid-template-columns:1fr 1fr;
     }
-
 }
 
-
-/* =========================================================
-MOBILE
-========================================================= */
+/* MOBILE */
 
 @media(max-width:600px){
 
@@ -1445,12 +1056,8 @@ MOBILE
 
     .header-button{
         padding:9px 12px;
-
         font-size:10px;
     }
-
-
-    /* HERO */
 
     .hero-content{
         padding:50px 0 55px;
@@ -1458,7 +1065,6 @@ MOBILE
 
     .hero h1{
         font-size:45px;
-
         letter-spacing:-2px;
     }
 
@@ -1468,9 +1074,7 @@ MOBILE
 
     .hero-buttons{
         display:grid;
-
         grid-template-columns:1fr;
-
         width:100%;
     }
 
@@ -1480,16 +1084,12 @@ MOBILE
 
     .hero-image{
         min-height:270px;
-
         border-radius:12px;
     }
 
     .hero-image img{
         min-height:270px;
     }
-
-
-    /* STATS */
 
     .stat{
         padding:23px 14px;
@@ -1503,9 +1103,6 @@ MOBILE
         font-size:9px;
     }
 
-
-    /* SECTIONS */
-
     .section,
     .intro,
     .gallery,
@@ -1515,7 +1112,6 @@ MOBILE
 
     .section-header{
         display:block;
-
         margin-bottom:35px;
     }
 
@@ -1525,31 +1121,22 @@ MOBILE
 
     .intro-text{
         font-size:30px;
-
         letter-spacing:-1px;
     }
 
-
-    /* CARDS */
-
     .course-grid{
         grid-template-columns:1fr;
-
         gap:12px;
     }
 
     .course-card{
         min-height:auto;
-
         padding:25px;
     }
 
     .course-card h3{
         margin-top:25px;
     }
-
-
-    /* TECHNOLOGY */
 
     .tech-image{
         height:280px;
@@ -1559,25 +1146,16 @@ MOBILE
         grid-template-columns:1fr;
     }
 
-
-    /* GALLERY */
-
     .gallery-grid{
         grid-template-columns:1fr 1fr;
-
         grid-template-rows:190px 145px 145px;
-
         gap:7px;
     }
 
     .gallery-card:first-child{
         grid-column:span 2;
-
         grid-row:auto;
     }
-
-
-    /* MODES */
 
     .mode-grid{
         grid-template-columns:1fr;
@@ -1589,12 +1167,8 @@ MOBILE
 
     .mode h3{
         font-size:27px;
-
         margin-top:28px;
     }
-
-
-    /* CTA */
 
     .cta{
         padding:75px 0;
@@ -1602,19 +1176,12 @@ MOBILE
 
     .cta h2{
         font-size:43px;
-
         letter-spacing:-2px;
     }
-
-
-    /* FAQ */
 
     .faq-title h2{
         font-size:39px;
     }
-
-
-    /* FORM */
 
     .form{
         padding:20px 16px;
@@ -1623,9 +1190,6 @@ MOBILE
     .form-row{
         grid-template-columns:1fr;
     }
-
-
-    /* MAPA */
 
     .location{
         padding:70px 0;
@@ -1637,52 +1201,36 @@ MOBILE
 
     .map{
         height:230px;
-
         border-radius:10px;
     }
 
-
-    /* FOOTER */
+    footer{
+        padding-bottom:90px;
+    }
 
     .footer-grid{
         grid-template-columns:1fr;
-
         gap:30px;
     }
 
     .footer-bottom{
         display:block;
-
         line-height:1.7;
     }
 
     .footer-bottom span{
         display:block;
-
         margin-top:5px;
     }
 
-
-    /* WHATSAPP */
-
     .whatsapp{
         right:16px;
-
         bottom:16px;
-
         width:54px;
-
         height:54px;
-
         border-radius:15px;
     }
-
 }
-
-
-/* =========================================================
-SMALL PHONES
-========================================================= */
 
 @media(max-width:380px){
 
@@ -1693,19 +1241,12 @@ SMALL PHONES
     .header-button{
         display:none;
     }
-
 }
 
 </style>
 </head>
 
-
 <body>
-
-
-<!-- =========================================================
-HEADER
-========================================================= -->
 
 <header>
 
@@ -1722,17 +1263,13 @@ HEADER
 
 </a>
 
-
 <nav class="nav">
-
 <a href="#formacao">Formação</a>
 <a href="#tecnologia">Tecnologia</a>
 <a href="#modalidades">Modalidades</a>
 <a href="#localizacao">Localização</a>
 <a href="#faq">Dúvidas</a>
-
 </nav>
-
 
 <a href="#contato" class="header-button">
 Fale conosco
@@ -1742,11 +1279,6 @@ Fale conosco
 
 </header>
 
-
-
-<!-- =========================================================
-HERO
-========================================================= -->
 
 <section class="hero" id="inicio">
 
@@ -1781,7 +1313,6 @@ Ver conteúdo
 
 </div>
 
-
 <div class="hero-image">
 
 <img
@@ -1794,11 +1325,6 @@ alt="Formação em Impressão 3D ARCH STUDIO">
 
 </section>
 
-
-
-<!-- =========================================================
-STATS
-========================================================= -->
 
 <section class="stats">
 
@@ -1829,27 +1355,19 @@ STATS
 </section>
 
 
-
-<!-- =========================================================
-INTRO
-========================================================= -->
-
 <section class="intro">
 
 <div class="intro-grid container">
 
 <div>
 
-<span class="tag">
-A proposta
-</span>
+<span class="tag">A proposta</span>
 
 <h2 class="intro-title">
 Muito além de apertar o botão imprimir.
 </h2>
 
 </div>
-
 
 <div class="intro-text">
 
@@ -1867,11 +1385,6 @@ preparar o arquivo e chegar até a fabricação da peça.
 </section>
 
 
-
-<!-- =========================================================
-FORMAÇÃO
-========================================================= -->
-
 <section class="section section-gray" id="formacao">
 
 <div class="container">
@@ -1880,13 +1393,9 @@ FORMAÇÃO
 
 <div>
 
-<span class="tag">
-A formação
-</span>
+<span class="tag">A formação</span>
 
-<h2>
-Do zero à peça.
-</h2>
+<h2>Do zero à peça.</h2>
 
 </div>
 
@@ -1897,118 +1406,62 @@ da fabricação digital por Impressão 3D.
 
 </div>
 
-
 <div class="course-grid">
 
-
 <div class="course-card">
-
-<span class="course-number">
-01
-</span>
-
-<h3>
-Fundamentos
-</h3>
-
+<span class="course-number">01</span>
+<h3>Fundamentos</h3>
 <p>
 Entenda como funciona a Impressão 3D,
 os tipos de impressoras, materiais,
 componentes e conceitos fundamentais.
 </p>
-
 </div>
 
-
 <div class="course-card">
-
-<span class="course-number">
-02
-</span>
-
-<h3>
-Modelagem
-</h3>
-
+<span class="course-number">02</span>
+<h3>Modelagem</h3>
 <p>
 Aprenda a criar peças utilizando medidas,
 formas, furos, encaixes e projetos funcionais.
 </p>
-
 </div>
 
-
 <div class="course-card">
-
-<span class="course-number">
-03
-</span>
-
-<h3>
-Preparação
-</h3>
-
+<span class="course-number">03</span>
+<h3>Preparação</h3>
 <p>
 Aprenda a transformar seu modelo em um arquivo
 preparado para ser impresso.
 </p>
-
 </div>
 
-
 <div class="course-card">
-
-<span class="course-number">
-04
-</span>
-
-<h3>
-Calibração
-</h3>
-
+<span class="course-number">04</span>
+<h3>Calibração</h3>
 <p>
 Entenda temperatura, fluxo, velocidade,
 adesão e os principais ajustes da impressão.
 </p>
-
 </div>
 
-
 <div class="course-card">
-
-<span class="course-number">
-05
-</span>
-
-<h3>
-Impressão
-</h3>
-
+<span class="course-number">05</span>
+<h3>Impressão</h3>
 <p>
 Coloque o conhecimento em prática e acompanhe
 o processo de fabricação da peça.
 </p>
-
 </div>
 
-
 <div class="course-card">
-
-<span class="course-number">
-06
-</span>
-
-<h3>
-Projetos
-</h3>
-
+<span class="course-number">06</span>
+<h3>Projetos</h3>
 <p>
 Desenvolva peças próprias, protótipos,
 objetos funcionais e projetos personalizados.
 </p>
-
 </div>
-
 
 </div>
 
@@ -2017,17 +1470,11 @@ objetos funcionais e projetos personalizados.
 </section>
 
 
-
-<!-- =========================================================
-TECNOLOGIA
-========================================================= -->
-
 <section class="section technology" id="tecnologia">
 
 <div class="container">
 
 <div class="tech-grid">
-
 
 <div class="tech-image">
 
@@ -2037,12 +1484,9 @@ alt="Modelagem 3D">
 
 </div>
 
-
 <div class="tech-content">
 
-<span class="tag">
-Tecnologia
-</span>
+<span class="tag">Tecnologia</span>
 
 <h2>
 Ferramentas para transformar projetos em realidade.
@@ -2052,7 +1496,6 @@ Ferramentas para transformar projetos em realidade.
 Conheça ferramentas utilizadas nas diferentes etapas
 da criação, preparação e fabricação de projetos em 3D.
 </p>
-
 
 <div class="tools">
 
@@ -2087,11 +1530,6 @@ da criação, preparação e fabricação de projetos em 3D.
 </section>
 
 
-
-<!-- =========================================================
-GALERIA
-========================================================= -->
-
 <section class="gallery">
 
 <div class="container">
@@ -2100,13 +1538,9 @@ GALERIA
 
 <div>
 
-<span class="tag">
-Possibilidades
-</span>
+<span class="tag">Possibilidades</span>
 
-<h2>
-Do digital ao físico.
-</h2>
+<h2>Do digital ao físico.</h2>
 
 </div>
 
@@ -2116,7 +1550,6 @@ em objetos reais.
 </p>
 
 </div>
-
 
 <div class="gallery-grid">
 
@@ -2147,11 +1580,6 @@ em objetos reais.
 </section>
 
 
-
-<!-- =========================================================
-MODALIDADES
-========================================================= -->
-
 <section class="section modes" id="modalidades">
 
 <div class="container">
@@ -2160,13 +1588,9 @@ MODALIDADES
 
 <div>
 
-<span class="tag">
-Modalidades
-</span>
+<span class="tag">Modalidades</span>
 
-<h2>
-Escolha como aprender.
-</h2>
+<h2>Escolha como aprender.</h2>
 
 </div>
 
@@ -2177,9 +1601,7 @@ para cada modalidade.
 
 </div>
 
-
 <div class="mode-grid">
-
 
 <div class="mode">
 
@@ -2198,7 +1620,6 @@ e tenha contato com a parte prática do processo.
 
 </div>
 
-
 <div class="mode">
 
 <span class="mode-label">
@@ -2216,18 +1637,12 @@ conhecimentos com aulas e demonstrações passo a passo.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
 
-
-
-<!-- =========================================================
-CTA
-========================================================= -->
 
 <section class="cta">
 
@@ -2259,23 +1674,15 @@ Quero saber mais
 </section>
 
 
-
-<!-- =========================================================
-FAQ
-========================================================= -->
-
 <section class="section faq" id="faq">
 
 <div class="container">
 
 <div class="faq-grid">
 
-
 <div class="faq-title">
 
-<span class="tag">
-FAQ
-</span>
+<span class="tag">FAQ</span>
 
 <h2>
 Ainda ficou alguma dúvida?
@@ -2287,18 +1694,13 @@ Confira algumas perguntas frequentes sobre a formação.
 
 </div>
 
-
 <div class="faq-list">
-
 
 <div class="faq-item">
 
-<button class="faq-question">
-
+<button class="faq-question" type="button">
 Preciso saber modelagem 3D?
-
 <span class="faq-icon">+</span>
-
 </button>
 
 <div class="faq-answer">
@@ -2315,12 +1717,9 @@ gradualmente os conceitos necessários para desenvolver seus projetos.
 
 <div class="faq-item">
 
-<button class="faq-question">
-
+<button class="faq-question" type="button">
 Preciso ter uma impressora 3D?
-
 <span class="faq-icon">+</span>
-
 </button>
 
 <div class="faq-answer">
@@ -2337,12 +1736,9 @@ e as condições disponíveis para as aulas práticas.
 
 <div class="faq-item">
 
-<button class="faq-question">
-
+<button class="faq-question" type="button">
 O curso aborda Fusion 360?
-
 <span class="faq-icon">+</span>
-
 </button>
 
 <div class="faq-answer">
@@ -2359,12 +1755,9 @@ utilizando o Fusion 360.
 
 <div class="faq-item">
 
-<button class="faq-question">
-
+<button class="faq-question" type="button">
 Bambu Studio e OrcaSlicer fazem parte?
-
 <span class="faq-icon">+</span>
-
 </button>
 
 <div class="faq-answer">
@@ -2381,12 +1774,9 @@ e configuração dos arquivos para impressão.
 
 <div class="faq-item">
 
-<button class="faq-question">
-
+<button class="faq-question" type="button">
 Existem aulas presenciais e online?
-
 <span class="faq-icon">+</span>
-
 </button>
 
 <div class="faq-answer">
@@ -2403,12 +1793,9 @@ disponíveis no momento.
 
 <div class="faq-item">
 
-<button class="faq-question">
-
+<button class="faq-question" type="button">
 Como saber valores e datas?
-
 <span class="faq-icon">+</span>
-
 </button>
 
 <div class="faq-answer">
@@ -2422,7 +1809,6 @@ valores, datas e disponibilidade.
 
 </div>
 
-
 </div>
 
 </div>
@@ -2432,23 +1818,15 @@ valores, datas e disponibilidade.
 </section>
 
 
-
-<!-- =========================================================
-CONTATO
-========================================================= -->
-
 <section class="contact" id="contato">
 
 <div class="container">
 
 <div class="contact-grid">
 
-
 <div class="contact-info">
 
-<span class="tag">
-Contato
-</span>
+<span class="tag">Contato</span>
 
 <h2>
 Vamos conversar.
@@ -2458,7 +1836,6 @@ Vamos conversar.
 Quer saber mais sobre a formação? Envie seus dados
 e fale com a equipe da ARCH STUDIO.
 </p>
-
 
 <div class="details">
 
@@ -2487,19 +1864,32 @@ CEP 65075-441.
 </div>
 
 
-<form action="https://formsubmit.co/contato@curso3darch.online" method="POST">
+<!-- FORMULÁRIO CORRIGIDO -->
 
-    <input type="hidden" name="_next" value="https://curso3darch.online/obrigado.html">
+<form
+class="form"
+action="https://formsubmit.co/contato@curso3darch.online"
+method="POST">
 
-    <input type="hidden" name="_captcha" value="false">
+<input
+type="hidden"
+name="_next"
+value="https://curso3darch.online/obrigado.html">
 
-    <!-- seus campos do formulário -->
+<input
+type="hidden"
+name="_captcha"
+value="false">
 
-    <button type="submit" class="form-button">
-        ENVIAR INTERESSE
-    </button>
+<input
+type="hidden"
+name="_subject"
+value="Novo interesse - ARCH STUDIO CURSOS">
 
-</form>
+
+<div class="form-row">
+
+<div class="field">
 
 <label for="nome">
 NOME
@@ -2510,6 +1900,7 @@ type="text"
 id="nome"
 name="nome"
 placeholder="Seu nome"
+autocomplete="name"
 required>
 
 </div>
@@ -2526,12 +1917,15 @@ type="tel"
 id="whatsapp"
 name="whatsapp"
 placeholder="(00) 00000-0000"
+autocomplete="tel"
 required>
 
 </div>
 
 </div>
 
+
+<div class="form-row">
 
 <div class="field">
 
@@ -2544,6 +1938,7 @@ type="email"
 id="email"
 name="email"
 placeholder="seuemail@email.com"
+autocomplete="email"
 required>
 
 </div>
@@ -2576,6 +1971,8 @@ Online
 
 </div>
 
+</div>
+
 
 <div class="field">
 
@@ -2596,14 +1993,20 @@ placeholder="Digite sua mensagem"></textarea>
 <input
 type="checkbox"
 id="termos"
+name="aceite_termos"
+value="Sim"
 required>
 
 <label for="termos">
 
 Concordo com a
-<a href="politica.html">Política de Privacidade</a>
+<a href="politica.html">
+Política de Privacidade
+</a>
 e os
-<a href="termos.html">Termos de Uso</a>.
+<a href="termos.html">
+Termos de Uso
+</a>.
 
 </label>
 
@@ -2624,15 +2027,8 @@ ENVIAR INTERESSE
 
 </div>
 
-</div>
-
 </section>
 
-
-
-<!-- =========================================================
-LOCALIZAÇÃO
-========================================================= -->
 
 <section class="location" id="localizacao">
 
@@ -2654,7 +2050,6 @@ ARCH STUDIO CURSOS • São Luís - MA
 
 </div>
 
-
 <div class="map">
 
 <iframe
@@ -2670,17 +2065,11 @@ allowfullscreen>
 </section>
 
 
-
-<!-- =========================================================
-FOOTER
-========================================================= -->
-
 <footer>
 
 <div class="container">
 
 <div class="footer-grid">
-
 
 <div class="footer-column">
 
@@ -2704,9 +2093,7 @@ São Luís - Maranhão
 
 <div class="footer-column">
 
-<h4>
-Navegação
-</h4>
+<h4>Navegação</h4>
 
 <a href="#inicio">Início</a>
 <a href="#formacao">Formação</a>
@@ -2720,9 +2107,7 @@ Navegação
 
 <div class="footer-column">
 
-<h4>
-Informações
-</h4>
+<h4>Informações</h4>
 
 <a href="sobre.html">
 Sobre Nós
@@ -2740,7 +2125,6 @@ Termos de Uso
 href="https://wa.me/5598988350945"
 target="_blank"
 rel="noopener">
-
 WhatsApp
 </a>
 
@@ -2774,14 +2158,11 @@ São Luís/MA, CEP 65075-441.
 <br><br>
 
 <strong>E-mail</strong><br>
-<span style="color:#6f7c90;">
-Adicionar e-mail
-</span>
+contato@curso3darch.online
 
 </div>
 
 </div>
-
 
 </div>
 
@@ -2803,11 +2184,6 @@ Arch Studio Arquitetura & Construção Ltda.
 </footer>
 
 
-
-<!-- =========================================================
-WHATSAPP
-========================================================= -->
-
 <a
 href="https://wa.me/5598988350945"
 target="_blank"
@@ -2826,20 +2202,15 @@ aria-hidden="true">
 </a>
 
 
-
-<!-- =========================================================
-JAVASCRIPT
-========================================================= -->
-
 <script>
 
 /* FAQ */
 
 document.querySelectorAll(".faq-question").forEach(function(question){
 
-    question.addEventListener("click", function(){
+    question.addEventListener("click",function(){
 
-        const item = this.closest(".faq-item");
+        const item=this.closest(".faq-item");
 
         document.querySelectorAll(".faq-item").forEach(function(other){
 
@@ -2863,52 +2234,45 @@ document.getElementById("whatsapp");
 
 if(whatsappInput){
 
-    whatsappInput.addEventListener("input", function(){
+    whatsappInput.addEventListener("input",function(){
 
-        let value =
-        this.value.replace(/\D/g,"");
+        let value=this.value.replace(/\D/g,"");
 
-        value =
-        value.substring(0,11);
+        value=value.substring(0,11);
 
         if(value.length <= 10){
 
-            value =
-            value.replace(
+            value=value.replace(
                 /^(\d{2})(\d)/,
                 "($1) $2"
             );
 
-            value =
-            value.replace(
+            value=value.replace(
                 /(\d{4})(\d)/,
                 "$1-$2"
             );
 
         }else{
 
-            value =
-            value.replace(
+            value=value.replace(
                 /^(\d{2})(\d)/,
                 "($1) $2"
             );
 
-            value =
-            value.replace(
+            value=value.replace(
                 /(\d{5})(\d)/,
                 "$1-$2"
             );
 
         }
 
-        this.value = value;
+        this.value=value;
 
     });
 
 }
 
 </script>
-
 
 </body>
 </html>
