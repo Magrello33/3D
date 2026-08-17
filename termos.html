@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Termos de Uso | ARCH STUDIO CURSOS</title>
+
+<meta name="description"
+content="Termos de Uso da ARCH STUDIO CURSOS. Consulte as condições de utilização do site e dos conteúdos disponibilizados.">
+
+<style>
+
+/* =========================
+   BASE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --blue:#2563eb;
+    --blue-light:#eff6ff;
+    --dark:#111827;
+    --text:#374151;
+    --gray:#6b7280;
+    --light:#f8fafc;
+    --line:#e5e7eb;
+    --white:#ffffff;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+
+    position:sticky;
+    top:0;
+
+    z-index:100;
+}
+
+.header{
+    width:min(1150px, calc(100% - 40px));
+    height:76px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.brand img{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+}
+
+.brand-text strong{
+    display:block;
+
+    color:var(--dark);
+
+    font-size:14px;
+
+    letter-spacing:.7px;
+}
+
+.brand-text span{
+    display:block;
+
+    color:#9ca3af;
+
+    font-size:9px;
+
+    letter-spacing:1.4px;
+
+    margin-top:2px;
+}
+
+.back-home{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    padding:10px 16px;
+
+    border:1px solid #dbe3ef;
+
+    border-radius:6px;
+
+    color:var(--dark);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    transition:.2s;
+}
+
+.back-home:hover{
+    background:var(--blue);
+
+    border-color:var(--blue);
+
+    color:#fff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.page-hero{
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff 0%,
+            #ffffff 65%
+        );
+
+    border-bottom:1px solid var(--line);
+
+    padding:80px 20px;
+}
+
+.page-hero-inner{
+    width:min(900px,100%);
+
+    margin:auto;
+}
+
+.eyebrow{
+    color:var(--blue);
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+.page-hero h1{
+    color:var(--dark);
+
+    font-size:clamp(38px,6vw,64px);
+
+    line-height:1;
+
+    letter-spacing:-2.5px;
+
+    margin-top:14px;
+}
+
+.page-hero p{
+    max-width:650px;
+
+    color:var(--gray);
+
+    font-size:15px;
+
+    margin-top:20px;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.terms-wrapper{
+    width:min(900px, calc(100% - 30px));
+
+    margin:60px auto;
+}
+
+.terms{
+    background:#fff;
+
+    border:1px solid var(--line);
+
+    border-radius:10px;
+
+    padding:55px;
+
+    box-shadow:0 8px 30px rgba(15,23,42,.04);
+}
+
+.terms-section{
+    margin-bottom:42px;
+}
+
+.terms-section:last-child{
+    margin-bottom:0;
+}
+
+.terms h2{
+    color:var(--dark);
+
+    font-size:23px;
+
+    letter-spacing:-.5px;
+
+    margin-bottom:13px;
+}
+
+.terms h3{
+    color:var(--dark);
+
+    font-size:16px;
+
+    margin:22px 0 8px;
+}
+
+.terms p{
+    color:var(--text);
+
+    font-size:14px;
+
+    margin-bottom:12px;
+}
+
+.terms ul{
+    margin:12px 0 15px 22px;
+}
+
+.terms li{
+    color:var(--text);
+
+    font-size:14px;
+
+    margin-bottom:8px;
+}
+
+.highlight{
+    background:var(--blue-light);
+
+    border-left:4px solid var(--blue);
+
+    padding:18px 20px;
+
+    border-radius:5px;
+
+    margin:20px 0;
+}
+
+.highlight p{
+    margin:0;
+}
+
+
+/* =========================
+   DADOS DA EMPRESA
+========================= */
+
+.company-box{
+    background:#f8fafc;
+
+    border:1px solid var(--line);
+
+    border-radius:7px;
+
+    padding:20px;
+
+    margin-top:18px;
+}
+
+.company-box div{
+    padding:8px 0;
+
+    border-bottom:1px solid var(--line);
+
+    font-size:13px;
+}
+
+.company-box div:last-child{
+    border-bottom:0;
+}
+
+.company-box strong{
+    color:var(--dark);
+}
+
+.company-box span{
+    color:var(--gray);
+}
+
+
+/* =========================
+   BOTÃO FINAL
+========================= */
+
+.terms-end{
+    text-align:center;
+
+    margin-top:55px;
+
+    padding-top:40px;
+
+    border-top:1px solid var(--line);
+}
+
+.terms-end p{
+    color:var(--gray);
+
+    font-size:12px;
+
+    margin-bottom:22px;
+}
+
+.home-button{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:48px;
+
+    padding:0 25px;
+
+    background:var(--blue);
+
+    color:#fff;
+
+    border-radius:6px;
+
+    font-size:12px;
+
+    font-weight:800;
+
+    transition:.2s;
+}
+
+.home-button:hover{
+    background:#1d4ed8;
+
+    transform:translateY(-1px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111827;
+
+    color:#fff;
+
+    padding:45px 20px 25px;
+
+    margin-top:80px;
+}
+
+.footer-inner{
+    width:min(900px,100%);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:30px;
+}
+
+.footer-brand strong{
+    display:block;
+
+    font-size:15px;
+
+    letter-spacing:.7px;
+}
+
+.footer-brand span{
+    display:block;
+
+    color:#9ca3af;
+
+    font-size:11px;
+
+    margin-top:5px;
+}
+
+.footer-links{
+    display:flex;
+
+    gap:22px;
+
+    align-items:center;
+}
+
+.footer-links a{
+    color:#9ca3af;
+
+    font-size:11px;
+
+    transition:.2s;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+.footer-bottom{
+    width:min(900px,100%);
+
+    margin:30px auto 0;
+
+    padding-top:20px;
+
+    border-top:1px solid #263244;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-size:10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .header{
+        width:calc(100% - 25px);
+
+        height:68px;
+    }
+
+    .brand img{
+        width:36px;
+        height:36px;
+    }
+
+    .brand-text strong{
+        font-size:12px;
+    }
+
+    .brand-text span{
+        font-size:8px;
+    }
+
+    .back-home{
+        padding:8px 11px;
+
+        font-size:10px;
+    }
+
+    .page-hero{
+        padding:60px 15px;
+    }
+
+    .page-hero h1{
+        font-size:40px;
+
+        letter-spacing:-1.8px;
+    }
+
+    .page-hero p{
+        font-size:14px;
+    }
+
+    .terms-wrapper{
+        width:calc(100% - 20px);
+
+        margin:30px auto;
+    }
+
+    .terms{
+        padding:28px 20px;
+
+        border-radius:8px;
+    }
+
+    .terms-section{
+        margin-bottom:35px;
+    }
+
+    .terms h2{
+        font-size:21px;
+    }
+
+    .terms p,
+    .terms li{
+        font-size:13px;
+    }
+
+    .company-box{
+        padding:15px;
+    }
+
+    .company-box div{
+        font-size:12px;
+    }
+
+    .footer-inner{
+        flex-direction:column;
+
+        text-align:center;
+
+        align-items:center;
+    }
+
+    .footer-links{
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="header">
+
+<a href="index.html" class="brand">
+
+<img src="logo.png" alt="ARCH STUDIO">
+
+<div class="brand-text">
+
+<strong>ARCH STUDIO</strong>
+
+<span>CURSOS & TECNOLOGIA</span>
+
+</div>
+
+</a>
+
+
+<a href="index.html" class="back-home">
+
+← Página principal
+
+</a>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+TÍTULO
+========================= -->
+
+<section class="page-hero">
+
+<div class="page-hero-inner">
+
+<span class="eyebrow">
+Informações legais
+</span>
+
+<h1>
+Termos de Uso
+</h1>
+
+<p>
+Leia as condições gerais para utilização do site,
+dos conteúdos e dos canais digitais da
+ARCH STUDIO CURSOS.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+TERMOS
+========================= -->
+
+<main class="terms-wrapper">
+
+<article class="terms">
+
+
+<!-- 1 -->
+
+<section class="terms-section">
+
+<h2>
+1. Identificação
+</h2>
+
+<p>
+Este site é administrado pela ARCH STUDIO,
+empresa responsável pela divulgação de seus
+cursos, informações e canais de atendimento.
+</p>
+
+
+<div class="company-box">
+
+<div>
+<strong>Razão social:</strong>
+<span> Arch Studio Arquitetura & Construção Ltda.</span>
+</div>
+
+<div>
+<strong>Nome fantasia:</strong>
+<span> Arch Studio</span>
+</div>
+
+<div>
+<strong>CNPJ:</strong>
+<span> 26.074.382/0001-91</span>
+</div>
+
+<div>
+<strong>Situação cadastral:</strong>
+<span> Ativa</span>
+</div>
+
+<div>
+<strong>Endereço:</strong>
+<span>
+Av. Coronel Colares Moreira, 3,
+Edifício Business Center, sala 317,
+Jardim Renascença, São Luís/MA,
+CEP 65075-441.
+</span>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- 2 -->
+
+<section class="terms-section">
+
+<h2>
+2. Aceitação dos termos
+</h2>
+
+<p>
+Ao acessar e utilizar este site, o usuário declara
+estar de acordo com estes Termos de Uso.
+</p>
+
+<p>
+Caso não concorde com qualquer disposição destes
+termos, recomendamos que não utilize o site ou
+os serviços disponibilizados por meio dele.
+</p>
+
+</section>
+
+
+
+<!-- 3 -->
+
+<section class="terms-section">
+
+<h2>
+3. Uso do site
+</h2>
+
+<p>
+O usuário compromete-se a utilizar o site de maneira
+adequada, respeitando a legislação brasileira e os
+direitos de terceiros.
+</p>
+
+<p>
+Não é permitido utilizar o site para atividades
+ilícitas, fraudulentas, abusivas ou que possam
+prejudicar o funcionamento da plataforma.
+</p>
+
+</section>
+
+
+
+<!-- 4 -->
+
+<section class="terms-section">
+
+<h2>
+4. Conteúdo do site
+</h2>
+
+<p>
+Os textos, imagens, elementos gráficos, identidade
+visual, materiais e demais conteúdos disponibilizados
+no site podem pertencer à ARCH STUDIO ou a terceiros
+que tenham autorizado sua utilização.
+</p>
+
+<p>
+Salvo autorização expressa, não é permitida a
+reprodução, distribuição, modificação ou utilização
+comercial dos conteúdos do site.
+</p>
+
+</section>
+
+
+
+<!-- 5 -->
+
+<section class="terms-section">
+
+<h2>
+5. Informações sobre cursos
+</h2>
+
+<p>
+As informações apresentadas no site têm finalidade
+informativa e podem ser alteradas conforme a
+disponibilidade de turmas, horários, modalidades,
+valores e condições comerciais.
+</p>
+
+<p>
+A disponibilidade de cursos e condições de matrícula
+deve ser confirmada diretamente com a ARCH STUDIO
+antes da contratação.
+</p>
+
+<div class="highlight">
+
+<p>
+<strong>
+A divulgação de uma modalidade ou curso no site
+não representa garantia de disponibilidade permanente.
+</strong>
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- 6 -->
+
+<section class="terms-section">
+
+<h2>
+6. Inscrição e contratação
+</h2>
+
+<p>
+O envio de um formulário de contato ou mensagem pelo
+WhatsApp representa uma solicitação de informações e
+não constitui, por si só, confirmação de matrícula
+ou contratação de um curso.
+</p>
+
+<p>
+A contratação será considerada realizada somente
+quando houver confirmação das condições aplicáveis
+entre as partes.
+</p>
+
+</section>
+
+
+
+<!-- 7 -->
+
+<section class="terms-section">
+
+<h2>
+7. Valores e condições comerciais
+</h2>
+
+<p>
+Valores, formas de pagamento, datas, horários,
+condições promocionais e demais informações
+comerciais poderão variar.
+</p>
+
+<p>
+As condições válidas para uma contratação serão
+aquelas informadas e confirmadas no momento da
+negociação ou matrícula.
+</p>
+
+</section>
+
+
+
+<!-- 8 -->
+
+<section class="terms-section">
+
+<h2>
+8. Links e serviços de terceiros
+</h2>
+
+<p>
+O site poderá apresentar links ou utilizar serviços
+de terceiros, incluindo plataformas de comunicação,
+mapas, ferramentas de análise, hospedagem ou
+publicidade.
+</p>
+
+<p>
+A ARCH STUDIO não é responsável pelo conteúdo,
+funcionamento ou políticas de sites externos que
+possuam regras próprias.
+</p>
+
+</section>
+
+
+
+<!-- 9 -->
+
+<section class="terms-section">
+
+<h2>
+9. Disponibilidade do site
+</h2>
+
+<p>
+A ARCH STUDIO busca manter o site disponível e
+funcionando corretamente, mas não garante que o
+serviço permanecerá livre de interrupções,
+falhas técnicas ou indisponibilidades.
+</p>
+
+<p>
+Manutenções, atualizações, problemas de hospedagem,
+internet ou fatores externos podem eventualmente
+afetar o acesso.
+</p>
+
+</section>
+
+
+
+<!-- 10 -->
+
+<section class="terms-section">
+
+<h2>
+10. Limitação de responsabilidade
+</h2>
+
+<p>
+A ARCH STUDIO não será responsável por danos
+decorrentes de situações que estejam fora de seu
+controle razoável, incluindo falhas de conexão,
+problemas em serviços de terceiros ou utilização
+inadequada do site pelo usuário.
+</p>
+
+<p>
+As informações disponíveis no site possuem caráter
+informativo e não substituem as condições específicas
+estabelecidas em eventual contratação.
+</p>
+
+</section>
+
+
+
+<!-- 11 -->
+
+<section class="terms-section">
+
+<h2>
+11. Privacidade
+</h2>
+
+<p>
+O tratamento de informações pessoais realizado por
+meio deste site é apresentado em nossa
+<a href="politica.html" style="color:#2563eb;font-weight:700;">
+Política de Privacidade
+</a>.
+</p>
+
+<p>
+Recomendamos a leitura do documento antes de fornecer
+informações pessoais por meio dos canais disponíveis.
+</p>
+
+</section>
+
+
+
+<!-- 12 -->
+
+<section class="terms-section">
+
+<h2>
+12. Alterações dos Termos
+</h2>
+
+<p>
+A ARCH STUDIO poderá atualizar estes Termos de Uso
+sempre que necessário para adequá-los a alterações
+no site, nos serviços oferecidos ou na legislação
+aplicável.
+</p>
+
+<p>
+A versão publicada nesta página será considerada
+a versão vigente enquanto permanecer disponível.
+</p>
+
+</section>
+
+
+
+<!-- 13 -->
+
+<section class="terms-section">
+
+<h2>
+13. Legislação aplicável
+</h2>
+
+<p>
+Estes Termos de Uso são interpretados de acordo com
+a legislação brasileira aplicável.
+</p>
+
+<p>
+Eventuais questões relacionadas à utilização do site
+deverão observar as normas legais aplicáveis e os
+direitos assegurados aos usuários e consumidores.
+</p>
+
+</section>
+
+
+
+<!-- 14 -->
+
+<section class="terms-section">
+
+<h2>
+14. Contato
+</h2>
+
+<p>
+Para informações sobre os cursos, serviços ou
+questões relacionadas ao site, o usuário poderá
+entrar em contato com a ARCH STUDIO pelos canais
+disponibilizados no próprio site.
+</p>
+
+<p>
+<strong>Telefone / WhatsApp:</strong>
+(98) 98835-0945
+</p>
+
+<p>
+<strong>Endereço:</strong>
+Av. Coronel Colares Moreira, 3,
+Edifício Business Center, sala 317,
+Jardim Renascença, São Luís/MA,
+CEP 65075-441.
+</p>
+
+</section>
+
+
+
+<!-- =========================
+FINAL
+========================= -->
+
+<div class="terms-end">
+
+<p>
+Última atualização: agosto de 2026.
+</p>
+
+<a href="index.html" class="home-button">
+← Voltar para a página principal
+</a>
+
+</div>
+
+
+</article>
+
+</main>
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-inner">
+
+
+<div class="footer-brand">
+
+<strong>ARCH STUDIO</strong>
+
+<span>
+Cursos & Tecnologia
+</span>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="index.html">
+Início
+</a>
+
+<a href="politica.html">
+Política de Privacidade
+</a>
+
+<a href="termos.html">
+Termos de Uso
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 ARCH STUDIO CURSOS · CNPJ 26.074.382/0001-91 · Todos os direitos reservados.
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
