@@ -1112,6 +1112,42 @@ CONTATO
 .form-button:hover{
     background:var(--blue-dark);
 }
+    
+/* Container da caixa de seleção dos termos */
+.terms {
+  display: flex;
+  align-items: center; /* Alinha o checkbox verticalmente com a primeira linha do texto */
+  gap: 8px; /* Cria um espaço uniforme entre o checkbox e o texto */
+  margin: 16px 0; /* Espaçamento em cima e embaixo */
+  font-size: 14px;
+}
+
+/* Ajuste opcional no checkbox */
+.terms input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+/* Estilização do texto dos termos */
+.terms label {
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Estilização do botão de envio */
+.form-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0d6efd; /* Ajuste para a cor azul da sua marca */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 80px; /* IMPORTANTE: evita que o botão do WhatsApp cubra este botão no mobile */
+}
 
 
 /* =========================================================
