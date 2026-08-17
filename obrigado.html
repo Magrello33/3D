@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Obrigado | ARCH STUDIO CURSOS</title>
+
+<meta name="description"
+content="Mensagem enviada com sucesso para a ARCH STUDIO CURSOS.">
+
+<style>
+
+/* =========================
+BASE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --blue:#2563eb;
+    --blue-dark:#1d4ed8;
+    --dark:#111827;
+    --gray:#64748b;
+    --light:#f8fafc;
+    --line:#e2e8f0;
+    --white:#ffffff;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f8fafc 0%,
+        #eef4ff 100%
+    );
+
+    color:var(--dark);
+
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+    width:100%;
+    background:rgba(255,255,255,.92);
+    border-bottom:1px solid var(--line);
+
+    backdrop-filter:blur(10px);
+}
+
+.header{
+    width:min(1180px, calc(100% - 40px));
+    min-height:78px;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    text-decoration:none;
+    color:var(--dark);
+}
+
+.brand img{
+    width:42px;
+    height:42px;
+
+    object-fit:contain;
+}
+
+.brand-text strong{
+    display:block;
+
+    font-size:14px;
+    letter-spacing:.8px;
+}
+
+.brand-text span{
+    display:block;
+
+    margin-top:2px;
+
+    color:#94a3b8;
+
+    font-size:9px;
+    letter-spacing:1.5px;
+}
+
+
+/* =========================
+MAIN
+========================= */
+
+main{
+    flex:1;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:70px 20px;
+}
+
+.success-box{
+    width:min(680px, 100%);
+
+    background:#fff;
+
+    border:1px solid var(--line);
+
+    border-radius:18px;
+
+    padding:60px 50px;
+
+    text-align:center;
+
+    box-shadow:
+    0 25px 70px rgba(15,23,42,.08);
+}
+
+
+/* =========================
+ICON
+========================= */
+
+.success-icon{
+    width:78px;
+    height:78px;
+
+    margin:0 auto 28px;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+
+    border:1px solid #bfdbfe;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:var(--blue);
+
+    font-size:34px;
+    font-weight:700;
+}
+
+
+/* =========================
+TEXT
+========================= */
+
+.kicker{
+    color:var(--blue);
+
+    font-size:11px;
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:clamp(36px, 6vw, 58px);
+
+    line-height:1;
+
+    letter-spacing:-2px;
+
+    margin-bottom:20px;
+}
+
+.description{
+    max-width:500px;
+
+    margin:0 auto;
+
+    color:var(--gray);
+
+    font-size:15px;
+
+    line-height:1.7;
+}
+
+
+/* =========================
+NOTICE
+========================= */
+
+.notice{
+    margin:30px auto;
+
+    padding:16px 20px;
+
+    background:#f8fafc;
+
+    border:1px solid var(--line);
+
+    border-radius:10px;
+
+    color:#64748b;
+
+    font-size:12px;
+
+    line-height:1.6;
+}
+
+
+/* =========================
+BUTTONS
+========================= */
+
+.actions{
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:30px;
+}
+
+.button{
+    min-height:48px;
+
+    padding:0 23px;
+
+    border-radius:7px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:12px;
+    font-weight:800;
+
+    text-decoration:none;
+
+    transition:.2s;
+}
+
+.button-primary{
+    background:var(--blue);
+
+    color:#fff;
+
+    box-shadow:
+    0 8px 20px rgba(37,99,235,.18);
+}
+
+.button-primary:hover{
+    background:var(--blue-dark);
+
+    transform:translateY(-2px);
+}
+
+.button-secondary{
+    background:#fff;
+
+    color:var(--dark);
+
+    border:1px solid var(--line);
+}
+
+.button-secondary:hover{
+    border-color:#94a3b8;
+
+    transform:translateY(-2px);
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#fff;
+
+    border-top:1px solid var(--line);
+
+    padding:22px 20px;
+
+    text-align:center;
+}
+
+footer p{
+    color:#94a3b8;
+
+    font-size:10px;
+
+    line-height:1.6;
+}
+
+footer a{
+    color:var(--blue);
+
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .header{
+        width:calc(100% - 30px);
+
+        min-height:70px;
+    }
+
+    .brand img{
+        width:36px;
+        height:36px;
+    }
+
+    .brand-text strong{
+        font-size:12px;
+    }
+
+    .brand-text span{
+        font-size:8px;
+    }
+
+    main{
+        padding:40px 15px;
+    }
+
+    .success-box{
+        padding:45px 22px;
+
+        border-radius:14px;
+    }
+
+    .success-icon{
+        width:68px;
+        height:68px;
+
+        font-size:28px;
+
+        margin-bottom:24px;
+    }
+
+    h1{
+        font-size:40px;
+
+        letter-spacing:-1.5px;
+    }
+
+    .description{
+        font-size:14px;
+    }
+
+    .actions{
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .button{
+        width:100%;
+    }
+
+}
+
+
+/* =========================
+SMALL PHONES
+========================= */
+
+@media(max-width:380px){
+
+    .success-box{
+        padding:38px 18px;
+    }
+
+    h1{
+        font-size:35px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="header">
+
+<a href="index.html" class="brand">
+
+<img
+src="imagens/logo.png"
+alt="ARCH STUDIO">
+
+<div class="brand-text">
+
+<strong>
+ARCH STUDIO
+</strong>
+
+<span>
+CURSOS & TECNOLOGIA
+</span>
+
+</div>
+
+</a>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+CONTEÚDO
+========================= -->
+
+<main>
+
+<div class="success-box">
+
+
+<div class="success-icon">
+✓
+</div>
+
+
+<div class="kicker">
+Mensagem enviada
+</div>
+
+
+<h1>
+Obrigado!
+</h1>
+
+
+<p class="description">
+
+Recebemos seus dados com sucesso.
+
+A equipe da <strong>ARCH STUDIO CURSOS</strong>
+entrará em contato para fornecer mais informações
+sobre a formação em Impressão 3D.
+
+</p>
+
+
+<div class="notice">
+
+Se você deseja uma resposta mais rápida,
+também pode falar diretamente conosco pelo WhatsApp.
+
+</div>
+
+
+<div class="actions">
+
+
+<a
+href="index.html"
+class="button button-primary">
+
+← Voltar para o site
+
+</a>
+
+
+<a
+href="https://wa.me/5598988350945"
+target="_blank"
+rel="noopener"
+class="button button-secondary">
+
+Falar no WhatsApp
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<p>
+
+© 2026 ARCH STUDIO CURSOS · Todos os direitos reservados.
+
+<br>
+
+<a href="politica.html">
+Política de Privacidade
+</a>
+
+&nbsp;·&nbsp;
+
+<a href="termos.html">
+Termos de Uso
+</a>
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
